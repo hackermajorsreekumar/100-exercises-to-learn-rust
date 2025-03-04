@@ -1,5 +1,5 @@
 mod ticket {
-    struct Ticket {
+    pub struct Ticket {
         title: String,
         description: String,
         status: String,
@@ -43,6 +43,7 @@ mod tests {
     // Be careful though! We don't want this function to compile after you have changed
     // visibility to make the use statement compile!
     // Once you have verified that it indeed doesn't compile, comment it out.
+    /* 
     fn should_not_be_possible() {
         let ticket = Ticket::new("A title".into(), "A description".into(), "To-Do".into());
 
@@ -74,4 +75,5 @@ mod tests {
             status: "To-Do".into(),
         };
     }
+    */
 }
